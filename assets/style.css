@@ -1,0 +1,57 @@
+:root {
+  --red: hsl(0, 100%, 63%);
+  --pink: hsl(322, 100%, 66%);
+  --dark-cyan: hsl(192, 100%, 9%);
+  --pale-blue: hsl(207, 100%, 98%);
+  --light-pink: hsl(321, 100%, 78%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1;
+  font-family: "Open Sans", sans-serif;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Utilities */
+
+.center-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.between-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cl-red {
+  color: var(--red);
+}
+.cl-dark-cyan {
+  color: var(--dark-cyan);
+}
+.cl-pale-blue {
+  color: var(--pale-blue);
+}
+.cl-pink {
+  color: var(--pink);
+}
+.cl-light-pink {
+  color: var(--light-pink);
+}
+
+/* 
+  ↓ Page ↓
+*/
