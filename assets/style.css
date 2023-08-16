@@ -97,7 +97,7 @@ body {
   background-color: var(--pale-blue);
 }
 
-/* Header */
+/* Header area */
 
 .header {
   display: grid;
@@ -157,5 +157,58 @@ body {
 @media (min-width: 1200px) {
   .hero__title {
     font-size: 3rem;
+  }
+}
+
+/* Stats section */
+
+.stats {
+}
+.stats__img {
+  max-width: 100%;
+}
+@media (max-width: 991px) {
+  .stats__wrapper {
+    row-gap: 100px;
+    margin-top: 120px;
+    flex-direction: column;
+  }
+}
+@media (min-width: 992px) {
+  .stats__wrapper {
+    max-width: 880px;
+    margin-top: 130px;
+    margin-inline: auto;
+  }
+}
+
+.stats__unit {
+  text-align: center;
+}
+.stats__unit__img {
+  display: block;
+  margin-right: auto;
+}
+@media (max-width: 991px) {
+  .stats__unit__img {
+    transform: scale(0.532) translate(-16px, 6px);
+  }
+}
+.stats__unit__num {
+  display: block;
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  color: var(--dark-cyan);
+}
+.stats__unit__info {
+  opacity: 0.6;
+  font-size: 14px;
+}
+@media (min-width: 992px) {
+  .stats__unit__num {
+    font-size: 5.73rem;
+  }
+  .stats__unit__info {
+    font-size: 24px;
   }
 }
