@@ -147,11 +147,21 @@ h4 {
   align-items: center;
   grid-template-rows: min-content 1fr;
 }
+@media (min-width: 992px) {
+  .header {
+    align-items: end;
+    min-height: 760px;
+    padding-bottom: 118px;
+  }
+}
 
 .nav {
-  padding-top: 24px;
+  padding-top: 80px;
 }
 @media (max-width: 991px) {
+  .nav {
+    padding-top: 24px;
+  }
   .nav__logo__wrapper {
     max-width: 100px;
   }
