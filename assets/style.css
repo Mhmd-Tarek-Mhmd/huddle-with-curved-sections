@@ -147,13 +147,6 @@ h4 {
   align-items: center;
   grid-template-rows: min-content 1fr;
 }
-@media (min-width: 992px) {
-  .header {
-    align-items: end;
-    min-height: 760px;
-    padding-bottom: 118px;
-  }
-}
 
 .nav {
   padding-top: 80px;
