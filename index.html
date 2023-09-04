@@ -50,7 +50,7 @@
     -->
     <main>
       <!-- Stats section -->
-      <div role="region" class="stats">
+      <div role="region" aria-label="Stats" class="stats">
         <div class="container">
           <div class="center-flex">
             <img
@@ -79,7 +79,7 @@
       </div>
 
       <!-- Info section -->
-      <section class="info">
+      <div role="region" aria-label="Info" class="info">
         <article class="info__unit">
           <div
             aria-hidden="true"
@@ -156,12 +156,18 @@
             class="info__unit__wave info__unit__wave--2 info__unit__wave--bottom"
           ></div>
         </article>
-      </section>
+      </div>
 
       <!-- Subscription section  -->
-      <div role="region" class="subscription | center-flex">
+      <div
+        role="region"
+        aria-labelledby="subscription-title"
+        class="subscription | center-flex"
+      >
         <div>
-          <h2 class="subscription__title">Ready To Build Your Community?</h2>
+          <h2 id="subscription-title" class="subscription__title">
+            Ready To Build Your Community?
+          </h2>
           <button class="cta">Get Started For Free</button>
         </div>
       </div>
@@ -184,7 +190,12 @@
             </p>
             <form class="footer__newsletter__form | between-md-flex">
               <div class="flex-fill pos-relative">
-                <input class="footer__newsletter__form__input" type="email" />
+                <input
+                  type="email"
+                  aria-label="Enter your email"
+                  placeholder="Enter your email..."
+                  class="footer__newsletter__form__input"
+                />
                 <p
                   role="alert"
                   aria-live="assertive"
